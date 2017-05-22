@@ -6,7 +6,7 @@ MAINTAINER n.wallerand@gmail.com
 
 VOLUME ["/var/www"]
 
-# Commande RUN utilis? uniquement lors de la creation du container (necessite un docker build)
+# Commande RUN utilise uniquement lors de la creation du container (necessite un docker build)
 RUN apt-get update && \
     apt-get dist-upgrade -y && \
     apt-get install -y \
@@ -32,7 +32,7 @@ RUN apt-get update && \
     && php -r "unlink('composer-setup.php');" 
 
 # Creation variable
-ENV VARIABLE ma-variable
+#ENV VARIABLE ma-variable
 
 # On expose le port SSH pour pouvoir se connecter sur la machine
 #EXPOSE 22
