@@ -14,7 +14,7 @@ Usage
 ------
 
 ```
-$ docker run -d -P nwallerand/apache_php7
+$ docker run -d -P nwallerand/docker_apache_php7
 ```
 
 With all the options:
@@ -23,7 +23,7 @@ With all the options:
 $ docker run -d -p 8080:80 \
     -v /home/user/webroot:/var/www \
     -e PHP_ERROR_REPORTING='E_ALL & ~E_STRICT' \
-    nwallerand/apache_php7
+    nwallerand/docker_apache_php7
 ```
 
 * `-v [local path]:/var/www` maps the container's webroot to a local path
