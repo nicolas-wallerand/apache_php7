@@ -42,6 +42,8 @@ COPY run /usr/local/bin/run
 RUN chmod +x /usr/local/bin/run
 RUN a2enmod rewrite
 
+ADD app /var/www/html
+
 # PORT 80 Ouvert
 EXPOSE  80
 
