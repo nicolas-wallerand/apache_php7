@@ -16,6 +16,7 @@ RUN apt-get update && \
       php7.0-cli \
       libapache2-mod-php7.0 \
       php7.0-gd \
+      php-curl \    
       php-imagick \ 
       php7.0-json \
       php7.0-ldap \
