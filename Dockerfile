@@ -37,9 +37,6 @@ RUN mv composer.phar /usr/local/bin/composer
 # Creation variable
 #ENV VARIABLE ma-variable
 
-# On expose le port SSH pour pouvoir se connecter sur la machine
-#EXPOSE 22
-
 COPY apache_default /etc/apache2/sites-available/000-default.conf
 COPY run /usr/local/bin/run
 RUN chmod +x /usr/local/bin/run
